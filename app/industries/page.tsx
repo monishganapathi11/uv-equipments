@@ -1,10 +1,10 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Layers, Mountain, Hammer, Building2, Grid, Droplets } from "lucide-react";
-import { PRODUCTS } from "@/data/products";
+import { ArrowRight, Mountain, Hammer, Building2, Grid, Droplets } from "lucide-react";
 import { DiagonalStripes } from "@/components/DiagonalStripes";
 import { SectionSeparator } from "@/components/SectionSeparator";
+import { BrandTagline } from "@/components/BrandTagline";
 
 export const metadata: Metadata = {
   title: "Industries Served | Mining, Quarrying & Construction Processing",
@@ -100,19 +100,17 @@ export default function IndustriesPage() {
   return (
     <div className="flex flex-col bg-brand-navy">
       {/* HEADER */}
-      <section className="relative py-16 bg-brand-navy bg-blueprint border-b border-brand-green/30 overflow-hidden">
+      <section className="relative py-16 lg:py-20 bg-brand-navy bg-blueprint border-b border-brand-green/30 overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-full opacity-15 pointer-events-none">
           <DiagonalStripes height="h-full" width="w-full" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
-            MATERIAL PROCESSING APPLICATIONS
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-extrabold uppercase tracking-tight text-white leading-tight">
-            INDUSTRIES SERVED
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
+          <BrandTagline size="sm" />
+          <h1 className="text-4xl sm:text-6xl font-serif font-normal tracking-tight text-white leading-tight">
+            Industries Served
           </h1>
-          <p className="mt-3 text-base text-brand-platinum/90 max-w-2xl font-sans">
+          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-2xl font-sans font-normal">
             Engineered equipment applications across mining extraction, hard rock quarrying, multi-deck aggregate classification, and manufactured sand washing.
           </p>
         </div>
@@ -139,7 +137,7 @@ export default function IndustriesPage() {
                         <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest block">
                           SECTOR 0{idx + 1}
                         </span>
-                        <h2 className="text-2xl font-heading font-bold uppercase tracking-wider text-white">
+                        <h2 className="text-2xl sm:text-3xl font-serif font-normal text-white">
                           {ind.title}
                         </h2>
                       </div>
@@ -177,7 +175,7 @@ export default function IndustriesPage() {
                           className="p-3 bg-brand-navy hover:bg-brand-navy-light rounded-sm border border-brand-navy-light hover:border-brand-green flex items-center justify-between group transition-all"
                         >
                           <div>
-                            <span className="text-xs font-heading font-bold uppercase tracking-wider text-white group-hover:text-brand-green-light transition-colors block">
+                            <span className="text-sm font-sans font-semibold text-white group-hover:text-brand-green-light transition-colors block">
                               {mach.name}
                             </span>
                             <span className="text-[10px] font-mono text-gray-400">
@@ -210,7 +208,7 @@ export default function IndustriesPage() {
       {/* FOOTER CTA */}
       <section className="py-16 bg-brand-navy text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h3 className="text-2xl sm:text-3xl font-heading font-bold uppercase tracking-wider text-white">
+          <h3 className="text-3xl sm:text-4xl font-serif font-normal text-white">
             Custom Plant Circuit Flowsheet Sizing
           </h3>
           <p className="text-xs sm:text-sm text-gray-300 font-sans max-w-xl mx-auto">
@@ -219,7 +217,7 @@ export default function IndustriesPage() {
           <div className="pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-heading font-bold text-xs uppercase tracking-widest rounded-sm chamfer-sm shadow-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm shadow-xl transition-all"
             >
               Request Plant Consultation <ArrowRight className="w-4 h-4" />
             </Link>

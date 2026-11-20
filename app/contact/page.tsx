@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Globe, ExternalLink, Clock, ShieldCheck } from "lu
 import { COMPANY_CONTACT } from "@/data/products";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { DiagonalStripes } from "@/components/DiagonalStripes";
+import { BrandTagline } from "@/components/BrandTagline";
 
 export const metadata: Metadata = {
   title: "Contact Us & Factory Location | Technical Enquiry",
@@ -28,14 +29,12 @@ export default function ContactPage({
           <DiagonalStripes height="h-full" width="w-full" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
-            DIRECT FACTORY COMMUNICATION
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-extrabold uppercase tracking-tight text-white leading-tight">
-            CONTACT & ENQUIRY
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
+          <BrandTagline size="sm" />
+          <h1 className="text-4xl sm:text-6xl font-serif font-normal tracking-tight text-white leading-tight">
+            Contact & Technical Enquiry
           </h1>
-          <p className="mt-3 text-base text-brand-platinum/90 max-w-2xl font-sans">
+          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-2xl font-sans font-normal">
             Connect directly with UV Equipments engineering and sales representatives in Malur, Karnataka for equipment quotations, plant sizing, and technical proposals.
           </p>
         </div>
@@ -51,7 +50,7 @@ export default function ContactPage({
                 <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
                   OFFICIAL FACTORY DETAILS
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-heading font-bold uppercase tracking-wider text-white">
+                <h2 className="text-2xl sm:text-3xl font-serif font-normal text-white">
                   Head Office & Facility
                 </h2>
               </div>

@@ -1,34 +1,35 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, Inter } from "next/font/google";
+import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { COMPANY_CONTACT } from "@/data/products";
 
-const barlowCondensed = Barlow_Condensed({
-  weight: ["400", "500", "600", "700", "800"],
+const instrumentSerif = Instrument_Serif({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-heading",
+  variable: "--font-serif",
   display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(COMPANY_CONTACT.siteUrl),
   title: {
-    default: "UV Equipments | Advanced Crushing and Screening Solutions",
+    default: "UV Equipments | Unmatched Value",
     template: "%s | UV Equipments",
   },
   description:
     "Industrial crushing, screening, and material processing equipment manufacturer based in Malur, Karnataka, India. Heavy-duty jaw crushers, cone crushers, VSIs, screens, and classifiers.",
   keywords: [
     "UV Equipments",
+    "Unmatched Value",
     "Crushing and screening solutions",
     "Jaw Crusher India",
     "Cone Crusher",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: COMPANY_CONTACT.siteUrl,
-    title: "UV Equipments | Innovation Through Engineering",
+    title: "UV Equipments | Unmatched Value",
     description:
       "Advanced crushing, screening, and material processing equipment for the mining and construction industries.",
     siteName: "UV Equipments",
@@ -66,13 +67,13 @@ export const metadata: Metadata = {
         url: "/assets/logo/UV LOGO.webp",
         width: 1000,
         height: 1000,
-        alt: "UV Equipments - Advanced Crushing & Screening Solutions",
+        alt: "UV Equipments - Unmatched Value",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "UV Equipments | Advanced Crushing and Screening Solutions",
+    title: "UV Equipments | Unmatched Value",
     description:
       "Cutting-edge crushing, screening, and material processing equipment for mining and quarrying.",
     images: ["/assets/logo/UV LOGO.webp"],
@@ -94,20 +95,20 @@ export default function RootLayout({
     name: "UV Equipments",
     legalName: "UV Equipments",
     url: COMPANY_CONTACT.siteUrl,
-    logo: `${COMPANY_CONTACT.siteUrl}/assets/logo/UV%20LOGO.webp`,
+    logo: `${COMPANY_CONTACT.siteUrl}/assets/logo/uvx-logo-white.png`,
+    description:
+      "Manufacturer of industrial crushing, screening, and material handling equipment in Malur, Karnataka, India.",
+    foundingLocation: {
+      "@type": "Place",
+      name: "Malur, Kolar District, Karnataka, India",
+    },
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+91-8296138419",
-        contactType: "sales and technical support",
-        areaServed: "IN",
-        availableLanguage: ["English", "Kannada", "Hindi", "Tamil"],
-      },
-      {
-        "@type": "ContactPoint",
-        telephone: "+91-9488877519",
+        telephone: COMPANY_CONTACT.phones[0],
         contactType: "customer service",
         areaServed: "IN",
+        availableLanguage: ["English", "Kannada", "Hindi", "Tamil"],
       },
     ],
     address: {
@@ -122,14 +123,14 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${barlowCondensed.variable} ${inter.variable}`}>
+    <html lang="en" className={`${instrumentSerif.variable} ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
       </head>
-      <body className="bg-brand-navy text-brand-platinum min-h-screen flex flex-col font-body selection:bg-brand-green selection:text-white">
+      <body className="bg-brand-navy text-brand-platinum min-h-screen flex flex-col font-sans selection:bg-brand-green selection:text-white">
         <LoadingScreen />
         <Navbar />
         <main className="flex-grow">{children}</main>

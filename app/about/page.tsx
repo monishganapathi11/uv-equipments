@@ -6,19 +6,17 @@ import {
   Target,
   Wrench,
   ShieldCheck,
-  CheckCircle,
   Factory,
   ArrowRight,
   Cpu,
   Zap,
   TrendingUp,
   Award,
-  Layers,
   Users,
 } from "lucide-react";
 import { DiagonalStripes } from "@/components/DiagonalStripes";
 import { SectionSeparator } from "@/components/SectionSeparator";
-import { COMPANY_CONTACT } from "@/data/products";
+import { BrandTagline } from "@/components/BrandTagline";
 
 export const metadata: Metadata = {
   title: "About UV Equipments | Engineering Experience & Generational Innovation",
@@ -68,25 +66,20 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col bg-brand-navy">
-      {/* PAGE HERO HEADER */}
+      {/* PAGE HERO HEADER - EDITORIAL SERIF */}
       <section className="relative py-16 lg:py-24 bg-brand-navy bg-blueprint border-b border-brand-green/30 overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-full opacity-15 pointer-events-none">
           <DiagonalStripes height="h-full" width="w-full" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-navy-light/90 border border-brand-green rounded-sm mb-4">
-            <span className="w-2 h-2 rounded-full bg-brand-green-light" />
-            <span className="text-[11px] font-mono tracking-widest text-brand-green-light uppercase font-bold">
-              ABOUT UV EQUIPMENTS // MALUR, KARNATAKA
-            </span>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
+          <BrandTagline size="sm" />
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold uppercase tracking-tight text-white max-w-4xl leading-tight">
-            ENGINEERING EXPERIENCE. GENERATIONAL INNOVATION.
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-normal text-white max-w-4xl leading-[1.08] tracking-tight">
+            Engineering Experience. Generational Innovation.
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg text-brand-platinum/90 max-w-3xl font-sans leading-relaxed">
+          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-3xl font-sans font-normal leading-relaxed">
             With over 25 years of experience in the crushing and screening industry, UV EQUIPMENTS is built on a strong foundation of practical knowledge, technical expertise, and a deep understanding of the challenges faced by the crushing industry.
           </p>
         </div>
@@ -102,7 +95,7 @@ export default function AboutPage() {
                 OUR EVOLUTION
               </span>
 
-              <h2 className="text-3xl sm:text-4xl font-heading font-bold uppercase tracking-wider text-white">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
                 Our Journey – From Experience to Engineering
               </h2>
 
@@ -122,11 +115,11 @@ export default function AboutPage() {
               </div>
 
               {/* Core Philosophy Quote Callout */}
-              <div className="p-4 bg-brand-navy border-l-4 border-brand-green rounded-r-sm">
-                <p className="text-base font-heading font-bold text-white uppercase tracking-wide">
+              <div className="p-5 bg-brand-navy border-l-4 border-brand-green rounded-r-sm">
+                <p className="text-xl font-serif font-normal text-white leading-snug">
                   &ldquo;Our strength lies in understanding the problems before designing the solutions.&rdquo;
                 </p>
-                <span className="text-xs font-mono text-brand-green-light mt-1 block">
+                <span className="text-xs font-mono text-brand-green-light mt-2 block">
                   At UV EQUIPMENTS, we don&apos;t just manufacture machinery. We engineer solutions based on real industry experience.
                 </span>
               </div>
@@ -138,7 +131,7 @@ export default function AboutPage() {
                 <span className="text-xs font-mono tracking-widest text-brand-green font-bold uppercase block mb-1">
                   MANUFACTURING BASE
                 </span>
-                <h3 className="text-2xl font-heading font-bold uppercase tracking-wider mb-4">
+                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-brand-navy mb-4 leading-tight">
                   Built on Field Realities
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed mb-6 font-sans">
@@ -160,10 +153,10 @@ export default function AboutPage() {
               {/* 25+ Years Stat Card */}
               <div className="p-6 bg-brand-navy border border-brand-green/40 rounded-sm chamfer-sm">
                 <div className="flex items-baseline gap-3 mb-2">
-                  <span className="text-4xl sm:text-5xl font-heading font-extrabold text-white">
+                  <span className="text-5xl font-serif font-normal text-white">
                     25+
                   </span>
-                  <span className="text-xs font-mono text-brand-green-light uppercase tracking-wider font-bold">
+                  <span className="text-xs font-sans font-bold text-brand-green-light uppercase tracking-wider">
                     Years of Field Engineering Experience
                   </span>
                 </div>
@@ -185,7 +178,7 @@ export default function AboutPage() {
             <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
               OUR SIX CORE PILLARS
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold uppercase tracking-wider text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
               Our Manufacturing Philosophy
             </h2>
             <p className="mt-3 text-sm sm:text-base text-brand-platinum/90 font-sans">
@@ -211,7 +204,7 @@ export default function AboutPage() {
                       </span>
                     </div>
 
-                    <h3 className="text-lg font-heading font-bold uppercase tracking-wider text-white group-hover:text-brand-green-light transition-colors mb-2">
+                    <h3 className="text-xl font-serif font-normal text-white group-hover:text-brand-green-light transition-colors mb-2">
                       {pillar.title}
                     </h3>
 
@@ -236,7 +229,7 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-sm bg-brand-navy-light border border-brand-green flex items-center justify-center text-brand-green-light">
                   <Compass className="w-5 h-5" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold uppercase tracking-wider text-white">
+                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-white">
                   Our Vision
                 </h3>
               </div>
@@ -255,7 +248,7 @@ export default function AboutPage() {
                   <div className="w-10 h-10 rounded-sm bg-brand-green border border-brand-green-light flex items-center justify-center text-white">
                     <Target className="w-5 h-5" />
                   </div>
-                  <h3 className="text-2xl font-heading font-bold uppercase tracking-wider text-white">
+                  <h3 className="text-2xl sm:text-3xl font-serif font-normal text-white">
                     Our Commitment
                   </h3>
                 </div>
@@ -272,7 +265,7 @@ export default function AboutPage() {
                 <span className="text-[10px] font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
                   OFFICIAL COMPANY MISSION
                 </span>
-                <p className="text-lg sm:text-xl font-heading font-extrabold uppercase tracking-widest text-white">
+                <p className="text-xl sm:text-2xl font-serif font-normal uppercase tracking-wide text-white">
                   UNMATCHED VALUE. ENGINEERED FOR PERFORMANCE.
                 </p>
               </div>
@@ -285,7 +278,7 @@ export default function AboutPage() {
       <section className="py-12 bg-brand-navy border-t border-brand-green/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-heading font-bold uppercase tracking-wider text-white">
+            <h3 className="text-2xl font-serif font-normal text-white">
               Discuss Your Crushing Plant Requirements
             </h3>
             <p className="text-xs text-gray-300 font-mono mt-1">
@@ -294,7 +287,7 @@ export default function AboutPage() {
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-heading font-bold text-xs uppercase tracking-widest rounded-sm chamfer-sm transition-all shadow-md shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-md shrink-0"
           >
             Contact Engineering Team <ArrowRight className="w-4 h-4" />
           </Link>

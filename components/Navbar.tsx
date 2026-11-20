@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
                     }}
                     aria-expanded={productsOpen}
                     aria-haspopup="true"
-                    className={`px-3 py-2 text-sm font-heading tracking-wider flex items-center gap-1.5 transition-colors relative ${
+                    className={`px-3 py-2 text-xs font-sans font-semibold tracking-wider uppercase flex items-center gap-1.5 transition-colors relative ${
                       isActive || productsOpen ? "text-brand-green-light" : "text-white hover:text-brand-green-light"
                     }`}
                   >
@@ -147,7 +147,7 @@ export const Navbar: React.FC = () => {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`px-3 py-2 text-sm font-heading tracking-wider transition-colors relative ${
+                className={`px-3 py-2 text-xs font-sans font-semibold tracking-wider uppercase transition-colors relative ${
                   isActive ? "text-brand-green-light" : "text-white hover:text-brand-green-light"
                 }`}
               >
@@ -167,7 +167,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center space-x-3">
           <Link
             href="/contact"
-            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-heading font-bold uppercase tracking-widest bg-brand-green text-white hover:bg-brand-green-hover transition-all rounded-sm chamfer-sm shadow-lg border border-brand-green-light/40 hover:shadow-brand-green/20"
+            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-sans font-semibold uppercase tracking-wider bg-brand-green text-white hover:bg-brand-green-hover transition-all rounded-sm chamfer-sm shadow-lg border border-brand-green-light/40 hover:shadow-brand-green/20"
           >
             ENQUIRE NOW
           </Link>

@@ -145,11 +145,11 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 </span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold uppercase tracking-tight text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal text-white leading-tight">
                 {product.name}
               </h1>
 
-              <p className="text-base sm:text-lg text-brand-platinum font-medium leading-relaxed">
+              <p className="text-base sm:text-lg text-brand-platinum font-sans font-normal leading-relaxed">
                 {product.overview}
               </p>
 
@@ -178,13 +178,13 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
               <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <Link
                   href={`/contact?product=${product.slug}`}
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-heading font-bold text-xs uppercase tracking-widest rounded-sm chamfer-sm shadow-xl border border-brand-green-light/40 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm shadow-xl border border-brand-green-light/40 transition-all"
                 >
                   <Send className="w-3.5 h-3.5" /> Enquire About This Product
                 </Link>
                 <a
                   href="#specifications"
-                  className="inline-flex items-center justify-center px-6 py-3 text-xs font-heading font-bold uppercase tracking-widest text-brand-platinum hover:text-white bg-brand-navy-light rounded-sm border border-brand-platinum-dark/30 transition-all"
+                  className="inline-flex items-center justify-center px-6 py-3 text-xs font-sans font-semibold uppercase tracking-wider text-brand-platinum hover:text-white bg-brand-navy-light rounded-sm border border-brand-platinum-dark/30 transition-all"
                 >
                   View Full Specs Table ↓
                 </a>
@@ -216,7 +216,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
                   ENGINEERING HIGHLIGHTS
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-heading font-bold uppercase tracking-wider text-white">
+                <h2 className="text-3xl sm:text-4xl font-serif font-normal text-white">
                   Salient Features
                 </h2>
               </div>
@@ -245,7 +245,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                     <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
                       PROVEN DEPLOYMENT
                     </span>
-                    <h3 className="text-xl font-heading font-bold uppercase tracking-wider text-white">
+                    <h3 className="text-2xl font-serif font-normal text-white">
                       Field Applications
                     </h3>
                   </div>
@@ -284,7 +284,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
             <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
               DATA AUDIT ACCURACY
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold uppercase tracking-wider text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white">
               Model Comparison Matrix
             </h2>
             <p className="text-xs sm:text-sm text-gray-300 font-mono mt-1">
@@ -330,7 +330,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
           <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block">
             NEED A QUOTATION FOR {product.name.toUpperCase()}?
           </span>
-          <h3 className="text-2xl sm:text-3xl font-heading font-bold uppercase tracking-wider text-white">
+          <h3 className="text-3xl sm:text-4xl font-serif font-normal text-white">
             Request Model Sizing & Commercial Proposals
           </h3>
           <p className="text-xs sm:text-sm text-gray-300 max-w-xl mx-auto font-sans">
@@ -339,7 +339,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
           <div className="pt-2">
             <Link
               href={`/contact?product=${product.slug}`}
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-heading font-bold text-xs uppercase tracking-widest rounded-sm chamfer-sm shadow-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-xl"
             >
               Enquire About {product.name} <ArrowRight className="w-4 h-4" />
             </Link>

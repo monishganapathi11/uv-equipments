@@ -14,6 +14,7 @@ import { PRODUCTS } from "@/data/products";
 import { DiagonalStripes } from "@/components/DiagonalStripes";
 import { ProductImagePlate } from "@/components/ProductImagePlate";
 import { SectionSeparator } from "@/components/SectionSeparator";
+import { BrandTagline } from "@/components/BrandTagline";
 
 export default function HomePage() {
   const featuredProducts = PRODUCTS;
@@ -72,7 +73,7 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col bg-brand-navy">
-      {/* HERO SECTION */}
+      {/* HERO SECTION - CLAUDE EDITORIAL TYPOGRAPHY */}
       <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-brand-navy bg-blueprint overflow-hidden border-b border-brand-green/30">
         {/* Signature Diagonal Stripes Motifs */}
         <div className="absolute top-0 right-0 w-72 sm:w-96 h-full opacity-15 pointer-events-none">
@@ -85,32 +86,33 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Hero Left Content */}
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-navy-light/90 border border-brand-green rounded-sm chamfer-sm">
-                <span className="w-2 h-2 rounded-full bg-brand-green-light animate-ping" />
-                <span className="text-[11px] font-mono tracking-widest text-brand-green-light uppercase font-bold">
-                  INNOVATION THROUGH ENGINEERING
-                </span>
+            <div className="lg:col-span-7 space-y-7">
+              {/* Official Short Brand Tagline Treatment */}
+              <div>
+                <BrandTagline />
               </div>
 
-              <h1 className="text-4xl sm:text-5xl xl:text-6xl font-heading font-extrabold uppercase tracking-tight text-white leading-[1.05]">
-                ADVANCED CRUSHING AND SCREENING SOLUTIONS
+              {/* Large Editorial Serif Headline */}
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-[5.25rem] font-serif font-normal text-white leading-[1.08] tracking-tight">
+                Advanced Crushing and Screening Solutions
               </h1>
 
-              <p className="text-lg sm:text-xl text-brand-platinum/90 font-medium max-w-2xl leading-relaxed">
-                Engineered for the mining and construction industries. Heavy-duty material processing equipment built for continuous performance, high reduction ratios, and minimal maintenance.
+              {/* Refined Sans-Serif Body */}
+              <p className="text-base sm:text-lg text-brand-platinum/90 font-sans font-normal max-w-2xl leading-relaxed">
+                Engineered for heavy-duty mining, quarrying, and aggregate operations. Built for continuous high-reduction performance, hydraulic safety, and minimal plant maintenance.
               </p>
 
+              {/* Modern Sans-Serif CTA Buttons */}
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <Link
                   href="/products"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm chamfer-sm shadow-xl border border-brand-green-light/40 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm shadow-xl border border-brand-green-light/40 transition-all"
                 >
                   Explore Products <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-navy-light hover:bg-brand-navy-light/80 text-brand-platinum hover:text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm chamfer-sm border border-brand-platinum-dark/40 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-navy-light hover:bg-brand-navy-light/80 text-brand-platinum hover:text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm border border-brand-platinum-dark/40 transition-all"
                 >
                   Enquire Now
                 </Link>
@@ -163,15 +165,15 @@ export default function HomePage() {
       <section className="py-16 bg-brand-navy-dark relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-5">
               <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
                 MALUR, KARNATAKA, INDIA
               </span>
-              <h2 className="text-2xl sm:text-3xl font-heading font-bold uppercase tracking-wider text-white">
-                HEAVY INDUSTRIAL MACHINERY BUILT FOR RUGGED DURABILITY
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
+                Heavy Industrial Machinery Built for Rugged Durability
               </h2>
             </div>
-            <div className="lg:col-span-8 space-y-4 text-sm sm:text-base text-brand-platinum/90 leading-relaxed font-sans">
+            <div className="lg:col-span-7 space-y-4 text-sm sm:text-base text-brand-platinum/90 leading-relaxed font-sans">
               <p>
                 At UV Equipments, we design and manufacture cutting-edge crushing, screening, and material processing equipment tailored specifically for the rigorous demands of quarrying, mining, and civil construction. Operating from our manufacturing base in the KIADB Industrial Area, Malur, Kolar District, Karnataka, we focus on engineering integrity, precision tolerances, and operational longevity.
               </p>
@@ -191,13 +193,13 @@ export default function HomePage() {
               <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
                 FLAGSHIP MACHINERY
               </span>
-              <h2 className="text-3xl sm:text-4xl font-heading font-bold uppercase tracking-wider text-white">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
                 Featured Equipment Solutions
               </h2>
             </div>
             <Link
               href="/products"
-              className="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-xs font-heading font-bold uppercase tracking-wider text-brand-green-light hover:text-white transition-colors"
+              className="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-xs font-sans font-semibold uppercase tracking-wider text-brand-green-light hover:text-white transition-colors"
             >
               Explore Complete 6-Product Lineup →
             </Link>
@@ -221,10 +223,10 @@ export default function HomePage() {
                   <span className="text-[10px] font-mono tracking-widest text-brand-green-light uppercase block mb-1">
                     {prod.series}
                   </span>
-                  <h3 className="text-lg font-heading font-bold uppercase tracking-wider text-white group-hover:text-brand-green-light transition-colors">
+                  <h3 className="text-2xl font-serif font-normal text-white group-hover:text-brand-green-light transition-colors">
                     {prod.name}
                   </h3>
-                  <p className="text-xs text-gray-400 mt-2 line-clamp-3 leading-relaxed">
+                  <p className="text-xs text-gray-400 mt-2 line-clamp-3 leading-relaxed font-sans">
                     {prod.tagline}
                   </p>
                 </div>
@@ -235,7 +237,7 @@ export default function HomePage() {
                   </span>
                   <Link
                     href={`/products/${prod.slug}`}
-                    className="inline-flex items-center gap-1 text-xs font-heading font-bold uppercase tracking-wider text-white group-hover:text-brand-green-light"
+                    className="inline-flex items-center gap-1 text-xs font-sans font-semibold uppercase tracking-wider text-white group-hover:text-brand-green-light"
                   >
                     View Specs <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
@@ -253,7 +255,7 @@ export default function HomePage() {
             <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
               EQUIPMENT SPECTRUM
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold uppercase tracking-wider text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
               Six Primary Machinery Families
             </h2>
             <p className="text-xs sm:text-sm text-gray-300 mt-2 font-mono">
@@ -277,7 +279,7 @@ export default function HomePage() {
                       {prod.series}
                     </span>
                   </div>
-                  <h3 className="text-xl font-heading font-bold uppercase tracking-wider text-white group-hover:text-brand-green-light transition-colors mb-2">
+                  <h3 className="text-2xl font-serif font-normal text-white group-hover:text-brand-green-light transition-colors mb-2">
                     {prod.name}
                   </h3>
                   <p className="text-xs text-gray-300 leading-relaxed font-sans">
@@ -285,7 +287,7 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-brand-navy-light flex items-center justify-between text-xs font-heading uppercase tracking-wider text-brand-green-light">
+                <div className="mt-6 pt-4 border-t border-brand-navy-light flex items-center justify-between text-xs font-sans font-semibold uppercase tracking-wider text-brand-green-light">
                   <span>Explore Technical Matrix</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -302,7 +304,7 @@ export default function HomePage() {
             <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
               WHY CHOOSE UV EQUIPMENTS
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold uppercase tracking-wider text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
               Engineering Capabilities & Built-in Strengths
             </h2>
             <p className="text-sm text-gray-300 mt-2 font-sans">
@@ -321,7 +323,7 @@ export default function HomePage() {
                   <div className="w-10 h-10 rounded-sm bg-brand-navy border border-brand-green flex items-center justify-center text-brand-green-light">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h3 className="text-base font-heading font-bold uppercase tracking-wider text-white">
+                  <h3 className="text-xl font-serif font-normal text-white">
                     {strength.title}
                   </h3>
                   <p className="text-xs text-gray-300 leading-relaxed font-sans">
@@ -342,13 +344,13 @@ export default function HomePage() {
               <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
                 SECTORS & APPLICATIONS
               </span>
-              <h2 className="text-3xl sm:text-4xl font-heading font-bold uppercase tracking-wider text-white">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
                 Industries Served
               </h2>
             </div>
             <Link
               href="/industries"
-              className="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-xs font-heading font-bold uppercase tracking-wider text-brand-green-light hover:text-white transition-colors"
+              className="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-xs font-sans font-semibold uppercase tracking-wider text-brand-green-light hover:text-white transition-colors"
             >
               View Detailed Applications →
             </Link>
@@ -363,7 +365,7 @@ export default function HomePage() {
                 <div className="w-8 h-8 rounded-sm bg-brand-navy-light border border-brand-green/40 flex items-center justify-center text-brand-green-light mb-4 font-mono text-xs">
                   <Cpu className="w-4 h-4" />
                 </div>
-                <h3 className="text-lg font-heading font-bold uppercase tracking-wider text-white mb-2">
+                <h3 className="text-xl font-serif font-normal text-white mb-2">
                   {ind.name}
                 </h3>
                 <p className="text-xs text-gray-300 leading-relaxed font-sans">
@@ -387,7 +389,7 @@ export default function HomePage() {
               <span className="text-xs font-mono tracking-widest text-brand-green font-bold uppercase block">
                 DIRECT FACTORY CONSULTATION
               </span>
-              <h2 className="text-2xl sm:text-4xl font-heading font-extrabold uppercase tracking-tight text-brand-navy">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight text-brand-navy leading-tight">
                 Require Custom Crushing or Screening Plant Sizing?
               </h2>
               <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-sans">
@@ -397,7 +399,7 @@ export default function HomePage() {
               <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-heading font-bold text-xs uppercase tracking-widest rounded-sm chamfer-sm shadow-lg transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-widest rounded-sm chamfer-sm shadow-lg transition-all"
                 >
                   Contact Our Engineers <ArrowRight className="w-4 h-4" />
                 </Link>

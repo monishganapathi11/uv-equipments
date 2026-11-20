@@ -1,10 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Layers, Cpu, ShieldCheck } from "lucide-react";
+import { ArrowRight, Layers, ShieldCheck } from "lucide-react";
 import { PRODUCTS } from "@/data/products";
 import { ProductImagePlate } from "@/components/ProductImagePlate";
 import { DiagonalStripes } from "@/components/DiagonalStripes";
+import { BrandTagline } from "@/components/BrandTagline";
 
 export const metadata: Metadata = {
   title: "Crushing & Screening Equipment Catalog | 6 Machinery Families",
@@ -16,19 +17,17 @@ export default function ProductsPage() {
   return (
     <div className="flex flex-col bg-brand-navy">
       {/* HEADER */}
-      <section className="relative py-16 bg-brand-navy bg-blueprint border-b border-brand-green/30 overflow-hidden">
+      <section className="relative py-16 lg:py-20 bg-brand-navy bg-blueprint border-b border-brand-green/30 overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-full opacity-15 pointer-events-none">
           <DiagonalStripes height="h-full" width="w-full" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
-            COMPLETE MACHINERY CATALOGUE
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-heading font-extrabold uppercase tracking-tight text-white leading-tight">
-            INDUSTRIAL EQUIPMENT FAMILIES
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
+          <BrandTagline size="sm" />
+          <h1 className="text-4xl sm:text-6xl font-serif font-normal tracking-tight text-white leading-tight">
+            Industrial Equipment Families
           </h1>
-          <p className="mt-3 text-base text-brand-platinum/90 max-w-2xl font-sans">
+          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-2xl font-sans font-normal">
             Precision-engineered crushing, sizing, shaping, and sand-washing solutions manufactured for high-tonnage mining and quarry applications.
           </p>
         </div>
@@ -44,7 +43,7 @@ export default function ProductsPage() {
                 className="bg-brand-navy border border-brand-navy-light rounded-sm p-5 flex flex-col justify-between hover:border-brand-green transition-all duration-300 group shadow-2xl hover:-translate-y-1 chamfer-tr"
               >
                 <div>
-                  {/* Platinum Image Plate */}
+                  {/* Machinery Image Plate */}
                   <ProductImagePlate
                     src={prod.image}
                     alt={prod.name}
@@ -64,7 +63,7 @@ export default function ProductsPage() {
                     </span>
                   </div>
 
-                  <h2 className="text-xl font-heading font-bold uppercase tracking-wider text-white group-hover:text-brand-green-light transition-colors mb-2">
+                  <h2 className="text-2xl font-serif font-normal text-white group-hover:text-brand-green-light transition-colors mb-2">
                     {prod.name}
                   </h2>
 
@@ -95,7 +94,7 @@ export default function ProductsPage() {
 
                   <Link
                     href={`/products/${prod.slug}`}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-brand-navy-light group-hover:bg-brand-green text-white font-heading font-bold text-xs uppercase tracking-wider rounded-sm transition-all"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-brand-navy-light group-hover:bg-brand-green text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm transition-all"
                   >
                     View Details <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
@@ -108,10 +107,21 @@ export default function ProductsPage() {
 
       {/* TECHNICAL MATRIX NOTE */}
       <section className="py-12 bg-brand-navy border-t border-brand-navy-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-mono text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            All parameters, capacities (TPH), drive powers, and weights represent verified technical specifications from UV Equipments engineering documentation.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-2xl font-serif font-normal text-white">
+              Need Engineering Guidance for Your Circuit?
+            </h3>
+            <p className="text-xs text-gray-300 font-sans mt-1">
+              Our engineering team assists with flowsheet modeling, reduction stage selection, and capacity balancing.
+            </p>
+          </div>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-md shrink-0"
+          >
+            Request Sizing Consultation <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
     </div>

@@ -85,7 +85,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct }) => {
         <span className="text-xs font-mono tracking-widest text-brand-green font-bold uppercase block">
           OFFICIAL ENQUIRY & QUOTATION CHANNEL
         </span>
-        <h3 className="text-xl sm:text-2xl font-heading font-bold uppercase tracking-wider text-brand-navy">
+        <h3 className="text-2xl sm:text-3xl font-serif font-normal text-brand-navy leading-tight">
           Request Technical Specifications & Pricing
         </h3>
         <p className="text-xs text-gray-700 mt-1">
@@ -291,9 +291,9 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct }) => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full inline-flex items-center justify-center gap-2 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-heading font-bold text-sm uppercase tracking-widest rounded-sm chamfer-sm transition-all shadow-lg border border-brand-green-light/40"
+            className="w-full inline-flex items-center justify-center gap-2 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-lg border border-brand-green-light/40"
           >
-            <Send className="w-4 h-4" /> TRANSMIT TECHNICAL ENQUIRY
+            <Send className="w-4 h-4" /> Transmit Technical Enquiry
           </button>
         </form>
       )}
