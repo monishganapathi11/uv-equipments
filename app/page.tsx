@@ -146,7 +146,7 @@ export default function HomePage() {
                 {/* Decorative Chamfered Background Grid */}
                 <div className="absolute -inset-2 bg-gradient-to-r from-brand-green/30 to-brand-navy-light rounded-sm chamfer-tr blur-sm" />
                 <ProductImagePlate
-                  src="/assets/products/cone-crusher.webp"
+                  src="/images/products/cone-crusher.png"
                   alt="UV Equipments Horizontal Wave Cone Crusher UV-CHW 220"
                   productName="Horizontal Wave Cone Crusher"
                   series="UV-CHW 220"

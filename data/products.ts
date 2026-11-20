@@ -35,7 +35,7 @@ export const PRODUCTS: Product[] = [
       "Designed for heavy-duty operations, the Grizzly Feeder ensures a consistent flow of materials to the crushing equipment, improving efficiency and reducing wear on the crusher.",
     description:
       "The UVGF Series F1 Grizzly Feeder delivers reliable primary feed regulation for mining and aggregate crushing circuits. Engineered with a counter-unbalanced electric motor drive and replaceable manganese grizzly cartridge sections, it scalps fine quarry material ahead of the primary crusher while withstanding continuous high-impact loading.",
-    image: "/assets/products/grizzly-feeder.webp",
+    image: "/images/products/grizzly-feeder.png",
     imageCaption: "Representative image: Grizzly Feeder UVGF Series F1",
     salientFeatures: [
       "Counter unbalanced electric motor drive.",
@@ -120,7 +120,7 @@ export const PRODUCTS: Product[] = [
       "Our Jaw Crushers provide robust performance, efficiently crushing the toughest rocks and materials with high production rates and minimal maintenance.",
     description:
       "The UV-JVW Series Vertical Wave Jaw Crusher is built for aggressive primary reduction of hard, abrasive rock and ore. Featuring a heavy-duty single toggle mechanism, reversible high-grade manganese jaw plates, and optimized nip angle geometry, it delivers maximum throughput with minimal operating fatigue.",
-    image: "/assets/products/jaw-crusher.webp",
+    image: "/images/products/jaw-crusher.png",
     imageCaption: "Representative image: Vertical Wave Jaw Crusher UV-JVW Series",
     salientFeatures: [
       "Large feed acceptance capability.",
@@ -228,7 +228,7 @@ export const PRODUCTS: Product[] = [
       "With advanced engineering, the Cone Crusher delivers precise crushing capabilities, ensuring high productivity and consistent output quality.",
     description:
       "The UV-CHW Series Cone Crusher is designed for consistent cubical shape aggregate production across secondary and tertiary crushing stages. Equipped with hydraulic overload protection, dynamic high-speed CSS adjustment, and heavy-duty leaded bronze sleeves, it ensures seamless operation in demanding applications.",
-    image: "/assets/products/cone-crusher.webp",
+    image: "/images/products/cone-crusher.png",
     imageCaption: "Representative image: Horizontal Wave Cone Crusher UV-CHW Series",
     salientFeatures: [
       "Dual-dust seal system, user-friendly SMS system.",
@@ -319,7 +319,7 @@ export const PRODUCTS: Product[] = [
       "Our screening solutions offer reliable and versatile sorting of materials, enhancing the quality and efficiency of your production process.",
     description:
       "The UV-SCW Series Circular Wave Screen delivers multi-fraction sorting for quarries and aggregate installations. Featuring circular-motion modular vibrators interconnected via cardan shafts and an inclined screen deck geometry, it produces sharp material separation across 1 to 4 deck configurations.",
-    image: "/assets/products/circular-screen.webp",
+    image: "/images/products/screen.png",
     imageCaption: "Representative image: Circular Wave Screen UV-SCW Series",
     salientFeatures: [
       "Circular motion modular vibrators with two bearings per vibrator, interconnected by cardan shaft.",
@@ -405,7 +405,7 @@ export const PRODUCTS: Product[] = [
       "Perfect for creating high-quality cubicle shape aggregates, the VSI offers superior shaping and finishing capabilities for non-breakable concrete and asphalt applications.",
     description:
       "The UV-VMW Series Multi Wave Vertical Shaft Impactor provides rock-on-rock tertiary and quaternary shaping. Designed to produce high-specification manufactured sand conforming to ASTM C144 standards, it features an in-built hydraulic feed control, carbide-tipped rotor, and parallel flow bypass design.",
-    image: "/assets/products/vsi.webp",
+    image: "/images/products/vsi.png",
     imageCaption: "Representative image: Multi Wave VSI UV-VMW Series",
     salientFeatures: [
       "Steel structure for smooth operation.",
@@ -503,7 +503,7 @@ export const PRODUCTS: Product[] = [
       "Sand Washer Bucket Classifier is a high-efficiency machine designed to clean and classify sand, removing impurities for superior quality.",
     description:
       "The UVBC Series Sand Washer Bucket Classifier removes silt, clay, and ultra-fine contaminants from manufactured or natural sand. Utilizing a slow-rotating bucket wheel paired with an integrated vibro-motor dewatering screen, it maximizes sand recovery while minimizing process water loss.",
-    image: "/assets/products/bucket-classifier.webp",
+    image: "/images/products/bucket-classifier.png",
     imageCaption: "Representative image: Sand Washer Bucket Classifier UVBC Series",
     salientFeatures: [
       "Rapid and thorough sand cleaning for optimal productivity.",
