@@ -3,6 +3,7 @@ import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { LoadingScreen } from "@/components/LoadingScreen";
 import { COMPANY_CONTACT } from "@/data/products";
 
 const barlowCondensed = Barlow_Condensed({
@@ -129,6 +130,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-brand-navy text-brand-platinum min-h-screen flex flex-col font-body selection:bg-brand-green selection:text-white">
+        <LoadingScreen />
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

@@ -58,19 +58,12 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-green">
-          {/* Logo on refined platinum plate as specified */}
-          <div className="relative h-[48px] px-2 py-1 bg-platinum-metal rounded-sm border border-brand-platinum flex items-center justify-center shadow-md chamfer-sm">
-            <Image
-              src="/assets/logo/UV LOGO.webp"
-              alt="UV Equipments Monogram"
-              width={38}
-              height={38}
-              className="h-[36px] w-auto object-contain"
-              priority
-            />
-          </div>
-          <UVXLogo height={42} showSubtext={true} />
+        <Link
+          href="/"
+          className="flex items-center group focus:outline-none focus:ring-2 focus:ring-brand-green py-1"
+          aria-label="UV Equipments - Home"
+        >
+          <UVXLogo height={34} showSubtext={true} />
         </Link>
 
         {/* Desktop Navigation */}

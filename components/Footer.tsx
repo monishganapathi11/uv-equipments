@@ -16,18 +16,13 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Col 1: Brand & Identity */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="h-11 w-auto px-2 py-1 bg-platinum-metal rounded-sm border border-brand-platinum flex items-center justify-center chamfer-sm">
-                <Image
-                  src="/assets/logo/UV LOGO.webp"
-                  alt="UV Equipments"
-                  width={34}
-                  height={34}
-                  className="h-8 w-auto object-contain"
-                />
-              </div>
-              <UVXLogo height={38} showSubtext={true} />
-            </div>
+            <Link
+              href="/"
+              className="inline-block group focus:outline-none focus:ring-2 focus:ring-brand-green"
+              aria-label="UV Equipments - Home"
+            >
+              <UVXLogo height={32} showSubtext={true} />
+            </Link>
             <p className="text-xs text-gray-300 leading-relaxed font-sans">
               Advanced crushing, screening, and material processing equipment engineered for heavy-duty mining, quarrying, and aggregate applications.
             </p>

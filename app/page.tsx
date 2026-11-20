@@ -16,7 +16,7 @@ import { ProductImagePlate } from "@/components/ProductImagePlate";
 import { SectionSeparator } from "@/components/SectionSeparator";
 
 export default function HomePage() {
-  const featuredProducts = PRODUCTS.slice(0, 4);
+  const featuredProducts = PRODUCTS;
 
   // Company Strengths strictly derived from brochure features (no invented numbers)
   const brochureStrengths = [
@@ -117,14 +117,18 @@ export default function HomePage() {
               </div>
 
               {/* Verified Engineering Badges */}
-              <div className="pt-6 border-t border-brand-navy-light grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-mono text-gray-300">
+              <div className="pt-6 border-t border-brand-navy-light grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono text-gray-300">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-brand-green-light shrink-0" />
-                  <span>Modular Vibrator Design</span>
+                  <span>25+ Yrs Experience</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-brand-green-light shrink-0" />
-                  <span>Hydraulic Overload Safety</span>
+                  <span>Modular Cardan Shaft</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-brand-green-light shrink-0" />
+                  <span>Hydraulic Clearance</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-brand-green-light shrink-0" />
@@ -133,18 +137,18 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Right Showcase Plate */}
+            {/* Hero Right Showcase Plate - Flagship Cone Crusher */}
             <div className="lg:col-span-5">
               <div className="relative">
                 {/* Decorative Chamfered Background Grid */}
                 <div className="absolute -inset-2 bg-gradient-to-r from-brand-green/30 to-brand-navy-light rounded-sm chamfer-tr blur-sm" />
                 <ProductImagePlate
-                  src="/assets/products/jaw-crusher.webp"
-                  alt="UV Equipments Vertical Wave Jaw Crusher"
-                  productName="Vertical Wave Jaw Crusher"
-                  series="UV-JVW Series"
+                  src="/assets/products/cone-crusher.webp"
+                  alt="UV Equipments Horizontal Wave Cone Crusher UV-CHW 220"
+                  productName="Horizontal Wave Cone Crusher"
+                  series="UV-CHW 220"
                   priority={true}
-                  captionText="Representative image: UV-JVW Series Jaw Crusher"
+                  captionText="Flagship Heavy Machinery: UV-CHW 220 Cone Crusher"
                 />
               </div>
             </div>
@@ -199,7 +203,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredProducts.map((prod) => (
               <div
                 key={prod.slug}
