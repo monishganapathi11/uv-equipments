@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Inter } from "next/font/google";
+import { Saira_Condensed } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { COMPANY_CONTACT } from "@/data/products";
 
-const instrumentSerif = Instrument_Serif({
-  weight: "400",
+const sairaCondensed = Saira_Condensed({
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-saira",
   display: "swap",
 });
 
@@ -123,7 +117,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${instrumentSerif.variable} ${inter.variable}`}>
+    <html lang="en" className={`${sairaCondensed.variable} font-sans`}>
       <head>
         <script
           type="application/ld+json"

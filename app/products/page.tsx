@@ -24,10 +24,10 @@ export default function ProductsPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
           <BrandTagline size="sm" />
-          <h1 className="text-4xl sm:text-6xl font-serif font-normal tracking-tight text-white leading-tight">
+          <h1 className="text-5xl sm:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight">
             Industrial Equipment Families
           </h1>
-          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-2xl font-sans font-normal">
+          <p className="text-base sm:text-xl font-normal text-brand-platinum/90 max-w-2xl leading-relaxed">
             Precision-engineered crushing, sizing, shaping, and sand-washing solutions manufactured for high-tonnage mining and quarry applications.
           </p>
         </div>
@@ -54,30 +54,30 @@ export default function ProductsPage() {
                   />
 
                   {/* Header info */}
-                  <div className="flex items-center justify-between text-xs font-mono mb-2">
+                  <div className="flex items-center justify-between text-xs mb-2">
                     <span className="text-brand-green-light font-bold uppercase tracking-wider">
                       {prod.series}
                     </span>
-                    <span className="text-gray-400 bg-brand-navy-light px-2 py-0.5 rounded-sm">
+                    <span className="text-gray-400 font-medium bg-brand-navy-light px-2 py-0.5 rounded-sm uppercase">
                       FAMILY 0{idx + 1}
                     </span>
                   </div>
 
-                  <h2 className="text-2xl font-serif font-normal text-white group-hover:text-brand-green-light transition-colors mb-2">
+                  <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white group-hover:text-brand-green-light transition-colors mb-2">
                     {prod.name}
                   </h2>
 
-                  <p className="text-xs text-gray-300 leading-relaxed font-sans min-h-[48px]">
+                  <p className="text-xs sm:text-sm font-normal text-gray-300 leading-relaxed min-h-[48px]">
                     {prod.tagline}
                   </p>
 
                   {/* Quick Feature Highlights */}
-                  <div className="mt-4 pt-3 border-t border-brand-navy-light/60 space-y-1.5 text-[11px] text-gray-400 font-mono">
-                    <div className="flex items-center gap-1.5 text-gray-300">
+                  <div className="mt-4 pt-3 border-t border-brand-navy-light/60 space-y-1.5 text-xs font-medium text-gray-300">
+                    <div className="flex items-center gap-1.5">
                       <Layers className="w-3.5 h-3.5 text-brand-green-light shrink-0" />
                       <span>{prod.models.length} Model Configurations</span>
                     </div>
-                    <div className="flex items-center gap-1.5 text-gray-300">
+                    <div className="flex items-center gap-1.5">
                       <ShieldCheck className="w-3.5 h-3.5 text-brand-green-light shrink-0" />
                       <span>Standard Skid Mounting Available</span>
                     </div>
@@ -87,14 +87,14 @@ export default function ProductsPage() {
                 <div className="mt-6 pt-4 border-t border-brand-navy-light flex items-center justify-between">
                   <Link
                     href={`/contact?product=${prod.slug}`}
-                    className="text-xs font-mono text-gray-400 hover:text-white transition-colors"
+                    className="text-xs font-medium uppercase tracking-wider text-gray-400 hover:text-white transition-colors"
                   >
                     Quick Quote
                   </Link>
 
                   <Link
                     href={`/products/${prod.slug}`}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-brand-navy-light group-hover:bg-brand-green text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm transition-all"
+                    className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-brand-navy-light group-hover:bg-brand-green text-white font-bold text-xs uppercase tracking-wider rounded-sm transition-all"
                   >
                     View Details <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
@@ -109,16 +109,16 @@ export default function ProductsPage() {
       <section className="py-12 bg-brand-navy border-t border-brand-navy-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-2xl font-serif font-normal text-white">
+            <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
               Need Engineering Guidance for Your Circuit?
             </h3>
-            <p className="text-xs text-gray-300 font-sans mt-1">
+            <p className="text-sm font-normal text-gray-300 mt-1">
               Our engineering team assists with flowsheet modeling, reduction stage selection, and capacity balancing.
             </p>
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-md shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-md shrink-0"
           >
             Request Sizing Consultation <ArrowRight className="w-4 h-4" />
           </Link>

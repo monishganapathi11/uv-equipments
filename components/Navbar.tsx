@@ -167,7 +167,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center space-x-3">
           <Link
             href="/contact"
-            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-sans font-semibold uppercase tracking-wider bg-brand-green text-white hover:bg-brand-green-hover transition-all rounded-sm chamfer-sm shadow-lg border border-brand-green-light/40 hover:shadow-brand-green/20"
+            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-brand-green text-white hover:bg-brand-green-hover transition-all rounded-sm chamfer-sm shadow-lg border border-brand-green-light/40 hover:shadow-brand-green/20"
           >
             ENQUIRE NOW
           </Link>

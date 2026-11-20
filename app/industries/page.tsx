@@ -107,10 +107,10 @@ export default function IndustriesPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
           <BrandTagline size="sm" />
-          <h1 className="text-4xl sm:text-6xl font-serif font-normal tracking-tight text-white leading-tight">
+          <h1 className="text-5xl sm:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight">
             Industries Served
           </h1>
-          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-2xl font-sans font-normal">
+          <p className="text-base sm:text-xl font-normal text-brand-platinum/90 max-w-2xl leading-relaxed">
             Engineered equipment applications across mining extraction, hard rock quarrying, multi-deck aggregate classification, and manufactured sand washing.
           </p>
         </div>
@@ -137,7 +137,7 @@ export default function IndustriesPage() {
                         <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest block">
                           SECTOR 0{idx + 1}
                         </span>
-                        <h2 className="text-2xl sm:text-3xl font-serif font-normal text-white">
+                        <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
                           {ind.title}
                         </h2>
                       </div>
@@ -208,16 +208,16 @@ export default function IndustriesPage() {
       {/* FOOTER CTA */}
       <section className="py-16 bg-brand-navy text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h3 className="text-3xl sm:text-4xl font-serif font-normal text-white">
+          <h3 className="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">
             Custom Plant Circuit Flowsheet Sizing
           </h3>
-          <p className="text-xs sm:text-sm text-gray-300 font-sans max-w-xl mx-auto">
+          <p className="text-sm font-normal text-gray-300 max-w-xl mx-auto leading-relaxed">
             Discuss your material feed size and output fraction criteria with our engineering team in Malur, Karnataka.
           </p>
           <div className="pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm shadow-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs uppercase tracking-wider rounded-sm chamfer-sm shadow-xl transition-all"
             >
               Request Plant Consultation <ArrowRight className="w-4 h-4" />
             </Link>

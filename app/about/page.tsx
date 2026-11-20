@@ -13,6 +13,8 @@ import {
   TrendingUp,
   Award,
   Users,
+  Youtube,
+  ExternalLink,
 } from "lucide-react";
 import { DiagonalStripes } from "@/components/DiagonalStripes";
 import { SectionSeparator } from "@/components/SectionSeparator";
@@ -66,7 +68,7 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col bg-brand-navy">
-      {/* PAGE HERO HEADER - EDITORIAL SERIF */}
+      {/* PAGE HERO HEADER - SAIRA CONDENSED INDUSTRIAL TYPOGRAPHY */}
       <section className="relative py-16 lg:py-24 bg-brand-navy bg-blueprint border-b border-brand-green/30 overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-full opacity-15 pointer-events-none">
           <DiagonalStripes height="h-full" width="w-full" />
@@ -75,11 +77,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
           <BrandTagline size="sm" />
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-normal text-white max-w-4xl leading-[1.08] tracking-tight">
+          {/* Main hero headings: Saira Condensed ExtraBold (800) */}
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight text-white max-w-5xl leading-[0.96]">
             Engineering Experience. Generational Innovation.
           </h1>
 
-          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-3xl font-sans font-normal leading-relaxed">
+          {/* Paragraphs and descriptions: Saira Condensed Regular (400) */}
+          <p className="text-base sm:text-xl font-normal text-brand-platinum/90 max-w-3xl leading-relaxed">
             With over 25 years of experience in the crushing and screening industry, UV EQUIPMENTS is built on a strong foundation of practical knowledge, technical expertise, and a deep understanding of the challenges faced by the crushing industry.
           </p>
         </div>
@@ -91,15 +95,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Narrative */}
             <div className="lg:col-span-7 space-y-6">
-              <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block">
+              <span className="text-xs font-medium tracking-widest text-brand-green-light uppercase block">
                 OUR EVOLUTION
               </span>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
+              {/* Section headings: Saira Condensed Bold (700) */}
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide text-white leading-tight">
                 Our Journey – From Experience to Engineering
               </h2>
 
-              <div className="space-y-4 text-sm sm:text-base text-gray-300 leading-relaxed font-sans">
+              <div className="space-y-4 text-base sm:text-lg font-normal text-gray-300 leading-relaxed">
                 <p>
                   Our journey represents the transformation of 25+ years of practical industry experience into a new generation of engineering and manufacturing.
                 </p>
@@ -116,10 +121,10 @@ export default function AboutPage() {
 
               {/* Core Philosophy Quote Callout */}
               <div className="p-5 bg-brand-navy border-l-4 border-brand-green rounded-r-sm">
-                <p className="text-xl font-serif font-normal text-white leading-snug">
+                <p className="text-xl sm:text-2xl font-bold text-white uppercase tracking-wide leading-snug">
                   &ldquo;Our strength lies in understanding the problems before designing the solutions.&rdquo;
                 </p>
-                <span className="text-xs font-mono text-brand-green-light mt-2 block">
+                <span className="text-xs font-medium text-brand-green-light mt-2 block uppercase tracking-wider">
                   At UV EQUIPMENTS, we don&apos;t just manufacture machinery. We engineer solutions based on real industry experience.
                 </span>
               </div>
@@ -128,17 +133,17 @@ export default function AboutPage() {
             {/* Right Industrial Metric & Facility Card */}
             <div className="lg:col-span-5 space-y-6">
               <div className="bg-platinum-metal p-6 sm:p-8 rounded-sm shadow-2xl border border-brand-platinum-dark text-brand-navy chamfer-tr">
-                <span className="text-xs font-mono tracking-widest text-brand-green font-bold uppercase block mb-1">
+                <span className="text-xs font-bold tracking-widest text-brand-green uppercase block mb-1">
                   MANUFACTURING BASE
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-brand-navy mb-4 leading-tight">
+                <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-brand-navy mb-4 leading-tight">
                   Built on Field Realities
                 </h3>
-                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed mb-6 font-sans">
+                <p className="text-xs sm:text-sm font-normal text-gray-700 leading-relaxed mb-6">
                   Today, we combine more than two decades of industry knowledge with modern engineering, generational technology, automation, and the fresh perspectives of young engineers to develop reliable, efficient and performance-driven crushing and screening equipment.
                 </p>
 
-                <div className="space-y-3 pt-4 border-t border-gray-300 text-xs font-mono text-brand-navy">
+                <div className="space-y-3 pt-4 border-t border-gray-300 text-xs font-medium text-brand-navy uppercase tracking-wider">
                   <div className="flex items-center gap-2">
                     <Factory className="w-4 h-4 text-brand-green shrink-0" />
                     <span>Plot No. 118, 3rd Phase, KIADB Industrial Area, Malur, Karnataka</span>
@@ -153,16 +158,40 @@ export default function AboutPage() {
               {/* 25+ Years Stat Card */}
               <div className="p-6 bg-brand-navy border border-brand-green/40 rounded-sm chamfer-sm">
                 <div className="flex items-baseline gap-3 mb-2">
-                  <span className="text-5xl font-serif font-normal text-white">
+                  <span className="text-5xl font-extrabold text-white">
                     25+
                   </span>
-                  <span className="text-xs font-sans font-bold text-brand-green-light uppercase tracking-wider">
+                  <span className="text-xs font-bold text-brand-green-light uppercase tracking-wider">
                     Years of Field Engineering Experience
                   </span>
                 </div>
-                <p className="text-xs text-gray-400 font-sans leading-relaxed">
+                <p className="text-xs font-normal text-gray-400 leading-relaxed">
                   Decades of solving operational dilemmas in quarries and mining plants across South India, now engineered into every UVX production model.
                 </p>
+              </div>
+
+              {/* YouTube Media CTA Card */}
+              <div className="p-5 bg-gradient-to-br from-[#122A3E] to-[#0A1826] border border-red-500/40 rounded-sm chamfer-sm flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <Youtube className="w-8 h-8 text-red-500 shrink-0" />
+                  <div>
+                    <span className="text-xs font-bold uppercase text-white block">
+                      Video Demonstrations
+                    </span>
+                    <span className="text-[11px] font-normal text-gray-300 block">
+                      Watch real crushing trials & plant walkthroughs
+                    </span>
+                  </div>
+                </div>
+                <a
+                  href="https://www.youtube.com/@uveqiupments"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider rounded-sm transition-all shadow-md shrink-0"
+                >
+                  <span>SUBSCRIBE ON YOUTUBE</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             </div>
           </div>
@@ -175,13 +204,13 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24 bg-brand-navy bg-blueprint relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-2">
+            <span className="text-xs font-medium tracking-widest text-brand-green-light uppercase block mb-2">
               OUR SIX CORE PILLARS
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide text-white leading-tight">
               Our Manufacturing Philosophy
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-brand-platinum/90 font-sans">
+            <p className="mt-3 text-base font-normal text-brand-platinum/90">
               At UV EQUIPMENTS, manufacturing is driven by practical experience and continuous innovation. We combine our extensive field knowledge with modern engineering practices and automation technologies to develop machinery that meets the evolving demands of the industry.
             </p>
           </div>
@@ -204,11 +233,11 @@ export default function AboutPage() {
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-serif font-normal text-white group-hover:text-brand-green-light transition-colors mb-2">
+                    <h3 className="text-2xl font-bold uppercase tracking-wide text-white group-hover:text-brand-green-light transition-colors mb-2">
                       {pillar.title}
                     </h3>
 
-                    <p className="text-xs sm:text-sm text-gray-300 leading-relaxed font-sans">
+                    <p className="text-xs sm:text-sm font-normal text-gray-300 leading-relaxed">
                       {pillar.desc}
                     </p>
                   </div>
@@ -229,14 +258,14 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-sm bg-brand-navy-light border border-brand-green flex items-center justify-center text-brand-green-light">
                   <Compass className="w-5 h-5" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-white">
+                <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
                   Our Vision
                 </h3>
               </div>
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed font-sans">
+              <p className="text-base font-normal text-gray-300 leading-relaxed">
                 To become a trusted and globally recognised manufacturer of crushing, screening and material processing equipment by combining proven engineering experience with next-generation technology.
               </p>
-              <p className="text-xs sm:text-sm text-gray-400 font-mono leading-relaxed pt-2 border-t border-brand-navy-light">
+              <p className="text-xs sm:text-sm font-medium text-gray-400 leading-relaxed pt-2 border-t border-brand-navy-light uppercase tracking-wider">
                 We envision a future where crushing plants achieve higher productivity, greater energy efficiency, intelligent automation and improved operational reliability.
               </p>
             </div>
@@ -248,14 +277,14 @@ export default function AboutPage() {
                   <div className="w-10 h-10 rounded-sm bg-brand-green border border-brand-green-light flex items-center justify-center text-white">
                     <Target className="w-5 h-5" />
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-serif font-normal text-white">
+                  <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
                     Our Commitment
                   </h3>
                 </div>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-sans mb-4">
+                <p className="text-base font-normal text-gray-200 leading-relaxed mb-4">
                   Our commitment is simple: to deliver machinery that creates real value for our customers.
                 </p>
-                <p className="text-xs sm:text-sm text-gray-300 font-sans leading-relaxed">
+                <p className="text-xs sm:text-sm font-normal text-gray-300 leading-relaxed">
                   With a foundation of 25+ years of industry experience and a vision driven by innovation, UV EQUIPMENTS continues to move forward with one mission:
                 </p>
               </div>
@@ -265,7 +294,7 @@ export default function AboutPage() {
                 <span className="text-[10px] font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
                   OFFICIAL COMPANY MISSION
                 </span>
-                <p className="text-xl sm:text-2xl font-serif font-normal uppercase tracking-wide text-white">
+                <p className="text-xl sm:text-2xl font-extrabold uppercase tracking-wide text-white">
                   UNMATCHED VALUE. ENGINEERED FOR PERFORMANCE.
                 </p>
               </div>
@@ -278,16 +307,16 @@ export default function AboutPage() {
       <section className="py-12 bg-brand-navy border-t border-brand-green/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-2xl font-serif font-normal text-white">
+            <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
               Discuss Your Crushing Plant Requirements
             </h3>
-            <p className="text-xs text-gray-300 font-mono mt-1">
+            <p className="text-xs font-medium text-gray-300 uppercase tracking-wider mt-1">
               Connect with our application engineers in Malur, Karnataka.
             </p>
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-md shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-md shrink-0"
           >
             Contact Engineering Team <ArrowRight className="w-4 h-4" />
           </Link>

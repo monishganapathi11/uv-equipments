@@ -36,11 +36,11 @@ export const SpecTable: React.FC<SpecTableProps> = ({
             <span className="text-[10px] font-mono tracking-widest text-brand-green font-bold uppercase block">
               {"ENGINEERING TECHNICAL MATRIX // "}{series}
             </span>
-            <h3 className="text-lg sm:text-xl font-heading font-bold uppercase tracking-wider text-brand-navy">
+            <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-wide text-brand-navy">
               Technical Specifications
             </h3>
           </div>
-          <span className="text-xs font-mono bg-brand-navy text-white px-2.5 py-1 rounded-sm uppercase tracking-wider">
+          <span className="text-xs font-bold bg-brand-navy text-white px-2.5 py-1 rounded-sm uppercase tracking-wider">
             {models.length} Models
           </span>
         </div>
@@ -53,7 +53,7 @@ export const SpecTable: React.FC<SpecTableProps> = ({
                 {/* Sticky Parameter Header */}
                 <th
                   scope="col"
-                  className="sticky left-0 z-20 bg-brand-navy px-4 py-3 font-heading uppercase tracking-wider min-w-[170px] sm:min-w-[200px] border-r border-brand-navy-light shadow-[2px_0_5px_rgba(0,0,0,0.15)]"
+                  className="sticky left-0 z-20 bg-brand-navy px-4 py-3 font-bold uppercase tracking-wider min-w-[170px] sm:min-w-[200px] border-r border-brand-navy-light shadow-[2px_0_5px_rgba(0,0,0,0.15)]"
                 >
                   Description / Specification
                 </th>
@@ -61,7 +61,7 @@ export const SpecTable: React.FC<SpecTableProps> = ({
                   <th
                     key={model}
                     scope="col"
-                    className="px-4 py-3 font-heading uppercase tracking-wider text-center min-w-[130px] sm:min-w-[150px] border-r border-brand-navy-light last:border-r-0"
+                    className="px-4 py-3 font-bold uppercase tracking-wider text-center min-w-[130px] sm:min-w-[150px] border-r border-brand-navy-light last:border-r-0"
                   >
                     <span className="block text-brand-green-light font-bold">
                       {model}

@@ -16,7 +16,7 @@
 body {
   background-color: var(--brand-navy);
   color: var(--brand-platinum);
-  font-family: var(--font-body), system-ui, sans-serif;
+  font-family: var(--font-saira), "Arial Narrow", sans-serif;
   overflow-x: hidden;
   min-height: 100vh;
 }

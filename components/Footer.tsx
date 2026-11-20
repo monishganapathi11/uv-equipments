@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
+import { Phone, Mail, MapPin, Globe, ExternalLink, Youtube } from "lucide-react";
 import { PRODUCTS, COMPANY_CONTACT } from "@/data/products";
 import { DiagonalStripes } from "./DiagonalStripes";
 import { UVXLogo } from "./UVXLogo";
@@ -133,6 +133,20 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-2.5">
                 <Globe className="w-4 h-4 text-brand-green-light shrink-0" />
                 <span className="font-mono">{COMPANY_CONTACT.website}</span>
+              </div>
+
+              {/* Official YouTube Channel */}
+              <div className="flex items-center gap-2.5 pt-1">
+                <Youtube className="w-4 h-4 text-red-500 shrink-0" />
+                <a
+                  href="https://www.youtube.com/@uveqiupments"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-xs text-gray-200 hover:text-white flex items-center gap-1 group"
+                >
+                  <span>YouTube: @uveqiupments</span>
+                  <ExternalLink className="w-3 h-3 text-brand-green-light opacity-80" />
+                </a>
               </div>
             </div>
           </div>

@@ -23,10 +23,11 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Georgia", "Cambria", "Times New Roman", "serif"],
-        heading: ["var(--font-serif)", "Georgia", "Cambria", "Times New Roman", "serif"],
-        sans: ["var(--font-sans)", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        body: ["var(--font-sans)", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        sans: ["var(--font-saira)", "Arial Narrow", "sans-serif"],
+        heading: ["var(--font-saira)", "Arial Narrow", "sans-serif"],
+        body: ["var(--font-saira)", "Arial Narrow", "sans-serif"],
+        serif: ["var(--font-saira)", "Arial Narrow", "sans-serif"],
+        saira: ["var(--font-saira)", "Arial Narrow", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "2px",

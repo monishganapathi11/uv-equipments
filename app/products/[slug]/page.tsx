@@ -145,28 +145,28 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 </span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal text-white leading-tight">
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight">
                 {product.name}
               </h1>
 
-              <p className="text-base sm:text-lg text-brand-platinum font-sans font-normal leading-relaxed">
+              <p className="text-base sm:text-xl text-brand-platinum font-normal leading-relaxed">
                 {product.overview}
               </p>
 
-              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed font-sans">
+              <p className="text-xs sm:text-sm text-gray-300 font-normal leading-relaxed">
                 {product.description}
               </p>
 
               {/* Models list badges */}
               <div className="pt-2">
-                <span className="text-[11px] font-mono tracking-widest text-brand-green-light uppercase block mb-2">
+                <span className="text-[11px] font-medium tracking-widest text-brand-green-light uppercase block mb-2">
                   MODELS IN THIS SERIES:
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {product.models.map((m) => (
                     <span
                       key={m}
-                      className="px-2.5 py-1 text-xs font-mono font-bold bg-brand-navy-light text-white border border-brand-navy-light rounded-sm"
+                      className="px-2.5 py-1 text-xs font-medium bg-brand-navy-light text-white border border-brand-navy-light rounded-sm uppercase tracking-wide"
                     >
                       {m}
                     </span>
@@ -178,13 +178,13 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
               <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <Link
                   href={`/contact?product=${product.slug}`}
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm shadow-xl border border-brand-green-light/40 transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs uppercase tracking-wider rounded-sm chamfer-sm shadow-xl border border-brand-green-light/40 transition-all"
                 >
                   <Send className="w-3.5 h-3.5" /> Enquire About This Product
                 </Link>
                 <a
                   href="#specifications"
-                  className="inline-flex items-center justify-center px-6 py-3 text-xs font-sans font-semibold uppercase tracking-wider text-brand-platinum hover:text-white bg-brand-navy-light rounded-sm border border-brand-platinum-dark/30 transition-all"
+                  className="inline-flex items-center justify-center px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-brand-platinum hover:text-white bg-brand-navy-light rounded-sm border border-brand-platinum-dark/30 transition-all"
                 >
                   View Full Specs Table ↓
                 </a>
@@ -213,10 +213,10 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
             {/* Salient Features */}
             <div className="lg:col-span-7 space-y-6">
               <div className="border-b border-brand-navy-light pb-3">
-                <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
+                <span className="text-xs font-medium tracking-widest text-brand-green-light uppercase block mb-1">
                   ENGINEERING HIGHLIGHTS
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-serif font-normal text-white">
+                <h2 className="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">
                   Salient Features
                 </h2>
               </div>
@@ -242,10 +242,10 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
               {product.applications && product.applications.length > 0 && (
                 <div className="bg-brand-navy p-6 rounded-sm border border-brand-navy-light chamfer-tr">
                   <div className="border-b border-brand-navy-light pb-2 mb-4">
-                    <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
+                    <span className="text-xs font-medium tracking-widest text-brand-green-light uppercase block mb-1">
                       PROVEN DEPLOYMENT
                     </span>
-                    <h3 className="text-2xl font-serif font-normal text-white">
+                    <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
                       Field Applications
                     </h3>
                   </div>
@@ -281,10 +281,10 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
       <section id="specifications" className="py-16 bg-brand-navy bg-blueprint relative scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-8">
-            <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
+            <span className="text-xs font-medium tracking-widest text-brand-green-light uppercase block mb-1">
               DATA AUDIT ACCURACY
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-wide text-white">
               Model Comparison Matrix
             </h2>
             <p className="text-xs sm:text-sm text-gray-300 font-mono mt-1">
@@ -330,16 +330,16 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
           <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block">
             NEED A QUOTATION FOR {product.name.toUpperCase()}?
           </span>
-          <h3 className="text-3xl sm:text-4xl font-serif font-normal text-white">
+          <h3 className="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">
             Request Model Sizing & Commercial Proposals
           </h3>
-          <p className="text-xs sm:text-sm text-gray-300 max-w-xl mx-auto font-sans">
+          <p className="text-sm font-normal text-gray-300 max-w-xl mx-auto leading-relaxed">
             Our engineers in Malur will review your feed size, desired output, and production TPH to configure the optimal {product.series} model.
           </p>
           <div className="pt-2">
             <Link
               href={`/contact?product=${product.slug}`}
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-sans font-semibold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-xl"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs uppercase tracking-wider rounded-sm chamfer-sm transition-all shadow-xl"
             >
               Enquire About {product.name} <ArrowRight className="w-4 h-4" />
             </Link>

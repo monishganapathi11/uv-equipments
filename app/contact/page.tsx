@@ -31,10 +31,10 @@ export default function ContactPage({
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-3">
           <BrandTagline size="sm" />
-          <h1 className="text-4xl sm:text-6xl font-serif font-normal tracking-tight text-white leading-tight">
+          <h1 className="text-5xl sm:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight">
             Contact & Technical Enquiry
           </h1>
-          <p className="text-base sm:text-lg text-brand-platinum/90 max-w-2xl font-sans font-normal">
+          <p className="text-base sm:text-xl font-normal text-brand-platinum/90 max-w-2xl leading-relaxed">
             Connect directly with UV Equipments engineering and sales representatives in Malur, Karnataka for equipment quotations, plant sizing, and technical proposals.
           </p>
         </div>
@@ -47,10 +47,10 @@ export default function ContactPage({
             {/* Left Column: Direct Contact Info Blocks */}
             <div className="lg:col-span-5 space-y-6">
               <div className="border-b border-brand-navy-light pb-3">
-                <span className="text-xs font-mono tracking-widest text-brand-green-light uppercase font-bold block mb-1">
+                <span className="text-xs font-medium tracking-widest text-brand-green-light uppercase block mb-1">
                   OFFICIAL FACTORY DETAILS
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-serif font-normal text-white">
+                <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
                   Head Office & Facility
                 </h2>
               </div>
