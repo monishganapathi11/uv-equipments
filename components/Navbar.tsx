@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { ChevronDown, Menu, X, PhoneCall } from "lucide-react";
 import { PRODUCTS, COMPANY_CONTACT } from "@/data/products";
+import { UVXLogo } from "./UVXLogo";
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
@@ -59,24 +60,17 @@ export const Navbar: React.FC = () => {
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-green">
           {/* Logo on refined platinum plate as specified */}
-          <div className="relative h-[48px] px-2.5 py-1 bg-platinum-metal rounded-sm border border-brand-platinum flex items-center justify-center shadow-md chamfer-sm">
+          <div className="relative h-[48px] px-2 py-1 bg-platinum-metal rounded-sm border border-brand-platinum flex items-center justify-center shadow-md chamfer-sm">
             <Image
               src="/assets/logo/UV LOGO.webp"
-              alt="UV Equipments Logo"
-              width={40}
-              height={40}
-              className="h-[38px] w-auto object-contain"
+              alt="UV Equipments Monogram"
+              width={38}
+              height={38}
+              className="h-[36px] w-auto object-contain"
               priority
             />
           </div>
-          <div className="flex flex-col">
-            <span className="font-heading text-xl sm:text-2xl font-bold tracking-wider text-white uppercase group-hover:text-brand-green-light transition-colors">
-              UV EQUIPMENTS
-            </span>
-            <span className="text-[9px] uppercase tracking-widest text-brand-green-light font-mono -mt-1 hidden sm:block">
-              INNOVATION THROUGH ENGINEERING
-            </span>
-          </div>
+          <UVXLogo height={42} showSubtext={true} />
         </Link>
 
         {/* Desktop Navigation */}

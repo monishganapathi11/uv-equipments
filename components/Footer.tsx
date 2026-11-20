@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
 import { PRODUCTS, COMPANY_CONTACT } from "@/data/products";
 import { DiagonalStripes } from "./DiagonalStripes";
+import { UVXLogo } from "./UVXLogo";
 
 export const Footer: React.FC = () => {
   return (
@@ -16,23 +17,16 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Identity */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="h-12 w-auto px-2.5 py-1 bg-platinum-metal rounded-sm border border-brand-platinum flex items-center justify-center chamfer-sm">
+              <div className="h-11 w-auto px-2 py-1 bg-platinum-metal rounded-sm border border-brand-platinum flex items-center justify-center chamfer-sm">
                 <Image
                   src="/assets/logo/UV LOGO.webp"
                   alt="UV Equipments"
-                  width={36}
-                  height={36}
-                  className="h-9 w-auto object-contain"
+                  width={34}
+                  height={34}
+                  className="h-8 w-auto object-contain"
                 />
               </div>
-              <div>
-                <span className="font-heading text-xl font-bold tracking-wider text-white uppercase block">
-                  UV EQUIPMENTS
-                </span>
-                <span className="text-[9px] font-mono tracking-widest text-brand-green-light uppercase">
-                  INNOVATION THROUGH ENGINEERING
-                </span>
-              </div>
+              <UVXLogo height={38} showSubtext={true} />
             </div>
             <p className="text-xs text-gray-300 leading-relaxed font-sans">
               Advanced crushing, screening, and material processing equipment engineered for heavy-duty mining, quarrying, and aggregate applications.

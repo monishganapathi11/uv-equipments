@@ -22,17 +22,17 @@ This document tracks all content blocks, technical configurations, brand approva
 
 ## 2. Product Asset Status (`/public/assets/products/`)
 
-The prompt strictly mandates using only pre-processed WebP images (charcoal machine body, green accents, pure white background `#FFFFFF`, sitting inside platinum panels).
+The prompt strictly mandates using pre-processed WebP images (charcoal machine body, green accents, pure white background `#FFFFFF`, sitting inside platinum panels).
 
 Current status in workspace `/public/assets/products/`:
-- [ ] `grizzly-feeder.webp` — **MISSING** (Raw render: `UV 20X6X4 VIBRATOR` in Downloads)
-- [ ] `jaw-crusher.webp` — **MISSING** (Raw render: `UV 4232 JAW CRUSHER 2.jpg` in Downloads)
-- [ ] `cone-crusher.webp` — **MISSING** (Raw render: `UV CONE 120.jpg` on Desktop)
-- [ ] `circular-screen.webp` — **MISSING** (Raw render: `UV 20X6X4 VIBRATOR SCREEN.jpg` on Desktop)
-- [ ] `vsi.webp` — **MISSING** (Raw render: `UV VSI 300.jpg` on Desktop)
-- [ ] `bucket-classifier.webp` — **MISSING** (Raw render: in brochure page 7)
+- [x] `grizzly-feeder.webp` — **SUPPLIED & CONVERTED** (Feeder model UVGF 4210 F1)
+- [x] `jaw-crusher.webp` — **SUPPLIED & CONVERTED** (Jaw Crusher model UVJVW 4232)
+- [x] `cone-crusher.webp` — **SUPPLIED & CONVERTED** (Cone Crusher model UV-HW 220)
+- [x] `circular-screen.webp` — **SUPPLIED & CONVERTED** (Screen model CW 2060 with electrical panel)
+- [x] `vsi.webp` — **SUPPLIED & CONVERTED** (VSI model UV-VMW 300)
+- [x] `bucket-classifier.webp` — **SUPPLIED & CONVERTED** (Bucket Classifier model UVBC 150)
 
-*Standard applied during Phase 1 build:* In accordance with Section 11 of the master prompt, clean neutral industrial SVG/CSS placeholders with product names and series badges will be rendered until the pre-processed WebP images are supplied.
+All 6 official WebP assets are installed in `/public/assets/products/` and live on the respective product pages.
 
 ---
 
